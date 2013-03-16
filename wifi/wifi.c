@@ -122,18 +122,6 @@ static const char EXT_MODULE_PATH[] = WIFI_EXT_MODULE_PATH;
 #define WIFI_DRIVER_FW_PATH_PARAM	"/sys/module/wlan/parameters/fwpath"
 #endif
 
-#ifdef WIFI_EXT_MODULE_NAME
-static const char EXT_MODULE_NAME[] = WIFI_EXT_MODULE_NAME;
-#ifdef WIFI_EXT_MODULE_ARG
-static const char EXT_MODULE_ARG[] = WIFI_EXT_MODULE_ARG;
-#else
-static const char EXT_MODULE_ARG[] = "";
-#endif
-#endif
-#ifdef WIFI_EXT_MODULE_PATH
-static const char EXT_MODULE_PATH[] = WIFI_EXT_MODULE_PATH;
-#endif
-
 static const char IFACE_DIR[]           = "/data/system/wpa_supplicant";
 #ifdef WIFI_DRIVER_MODULE_PATH
 static const char DRIVER_MODULE_NAME[]  = WIFI_DRIVER_MODULE_NAME;
