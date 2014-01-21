@@ -2333,7 +2333,7 @@ AudioPolicyManagerBase::routing_strategy AudioPolicyManagerBase::getStrategy(
 #ifdef AUDIO_EXTN_INCALL_MUSIC_ENABLED
     case AudioSystem::INCALL_MUSIC:
 #endif
-#ifdef QCOM_FM_ENABLED
+#ifdef QCOM_MR1_FM
     case AudioSystem::FM:
 #endif
         return STRATEGY_MEDIA;
@@ -2838,7 +2838,7 @@ AudioPolicyManagerBase::device_category AudioPolicyManagerBase::getDeviceCategor
         case AUDIO_DEVICE_OUT_BLUETOOTH_SCO_HEADSET:
         case AUDIO_DEVICE_OUT_BLUETOOTH_A2DP:
         case AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_HEADPHONES:
-#ifdef QCOM_FM_ENABLED
+#ifdef QCOM_MR1_FM
         case AUDIO_DEVICE_OUT_FM:
 #endif
             return DEVICE_CATEGORY_HEADSET;
@@ -3016,7 +3016,7 @@ const AudioPolicyManagerBase::VolumeCurvePoint
         sDefaultMediaVolumeCurve  // DEVICE_CATEGORY_EARPIECE
     },
 #endif
-#ifdef QCOM_FM_ENABLED
+#ifdef QCOM_MR1_FM
     { // AUDIO_STREAM_FM
         sDefaultMediaVolumeCurve, // DEVICE_CATEGORY_HEADSET
         sSpeakerMediaVolumeCurve, // DEVICE_CATEGORY_SPEAKER

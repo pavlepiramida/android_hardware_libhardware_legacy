@@ -128,7 +128,7 @@ status_t AudioPolicyCompatClient::setStreamVolume(
                                           volume, output, delayMs);
 }
 
-#ifdef QCOM_FM_ENABLED
+#ifdef QCOM_MR1_FM
 status_t AudioPolicyCompatClient::setFmVolume(float volume,
                                               int delayMs)
 {
